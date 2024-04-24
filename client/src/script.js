@@ -32,8 +32,6 @@ const startGame = () => {
     createWordleGrid()
 }
 
-
-
 // Event Listenrs
 
 startBtn.addEventListener('click', function () {
