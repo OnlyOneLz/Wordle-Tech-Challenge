@@ -40,18 +40,42 @@ button {
   height: 100%;
   flex-direction: column;
   align-items: center;
+  gap: 10vh;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  grid-gap: 10px; /* Adjust the size of the gap between grid items */
-  border: 1px solid black;
-  width: 30vw;
-  height: 50vh;
-  border: 3px solid black;
+  grid-template-columns: repeat(5, 55px); 
+  grid-template-rows: repeat(6, 55px); 
+  gap: 5px;
+  border: 1px solid black; 
+  padding: 5px;
   margin-top: 10vh;
+}
+
+.grid-item {
+  background-color: lightgray;
+  border: 1px solid black;
+}
+
+.input-submit {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#game-input {
+    width: 15vw;
+    height: 25vh;
+    font-family: 'Kanit';
+    text-align: center;
+    padding-bottom: 3vh;
+    border-radius: 25px;
+    font-size: 23vmin;
+}
+ 
+#game-btn { 
+    width: 4vw;
 }
 
 /* Load Page */
