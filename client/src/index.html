@@ -4,15 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wordle Game</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
 
   <body>
-    <div class="load-page">
-
-    </div>
     <div class="home-page">
-
+      <div class="load-page">
+        <h2 class="load-page-title title">Welcome to Wordle</h2>
+        <p class="load-page-p">Get 6 chances to guess a 5-letter word.</p>
+        <button class="load-page-button">START GAME</button>
+      </div>
+      <div class="home-container">
+        <h1 class="home-title">Wordle</h1>
+      <div class="grid-container">
+      </div>
+      <div class="input-submit">
+        <input maxlength="5" type="text" id="game-input">
+        <button type="submit" id="game-btn">></button>
+      </div>
+    </div>
     </div>
   </body>
   <script src="script.js"></script>

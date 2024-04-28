@@ -1,9 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Croissant+One&family=Kanit:wght@500&family=Kumar+One&family=Oswald:wght@200&family=Rubik+Iso&family=Titillium+Web:wght@200&family=Victor+Mono:wght@100&family=Young+Serif&display=swap");
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.title {
+  font-size: 6vmin;
+  font-family: "Kanit";
+}
+
+p {
+  font-size: 2.5vmin;
+  font-family: "Kanit";
+  font-weight: 300;
+}
+
+button {
+  font-size: 3vmin;
+  font-family: "Kanit";
+}
+
+/* Home Page */
+
+.home-page {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(227, 219, 219, 0.341);
+}
+
+.home-container {
+  display: none;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 10vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 55px); 
+  grid-template-rows: repeat(6, 55px); 
+  gap: 5px;
+  border: 1px solid black; 
+  padding: 5px;
+}
+
+.grid-item {
+  background-color: lightgray;
+  border: 1px solid black;
+}
+
+.input-submit {
+    margin-top: 6vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+#game-input {
+    width: 15vw;
+    height: 5vh;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 3vmin;
+    font-family: 'Kanit';
+    background-color: rgb(185, 183, 183);
+}
+ 
+#game-btn { 
+    width: 100%;
+    border-radius: 25px;
+    background-color: black;
+    color: antiquewhite;
+}
+
+.home-title {
+    font-size: 4vmin;
+    margin-top: 0;
 }
 
 /* Load Page */
 
 .load-page {
-    
+  width: 60vw;
+  height: 60vh;
+  border: 3px solid black;
+  border-radius: 30px;
+  background-color: bisque;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.load-page-title {
+  grid-column: 2 / span 6;
+  grid-row: 1 / span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.load-page-p {
+  grid-column: 3 / span 4;
+  grid-row: 2 / span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.load-page-button {
+  grid-column: 3 / span 4;
+  grid-row: 6 / span 1;
+  background-color: black;
+  color: grey;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.load-page-button:hover {
+  background-color: grey;
+  color: black;
 }
